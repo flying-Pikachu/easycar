@@ -1,5 +1,5 @@
 package com.edu.dlnu.controller;
-import com.edu.dlnu.been.Order;
+import com.edu.dlnu.been.Car;
 import com.edu.dlnu.services.CarServices;
 import com.edu.dlnu.services.OrderServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.ui.Model;
 
-import java.util.List;
+import java.util.Map;
 
 
 @Controller
@@ -22,8 +22,12 @@ public class OrdersController {
 
     @RequestMapping("allOrders")
     public String getAllOrders(Model model) {
-        System.out.println(orderServices.getAllOrdersByOrderNum("").size());
         model.addAttribute("allOrders", orderServices.getAllOrdersByOrderNum(""));
+        model.addAttribute("allCars", carServices.getAllCars());
+        for (Map.Entry<String, Car> entry : carServices.getAllCars().entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
         return "OrderCenter";
     }
 

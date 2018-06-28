@@ -21,4 +21,9 @@
     必须遵循：mapper.xml和mapper.java文件同名且在一个目录
      -->
 
+    <mappers>
+        <mapper class="com.edu.dlnu.mapper.UserMapper"></mapper>
+        <mapper class="com.edu.dlnu.mapper.CarMapper"></mapper>
+        <mapper class="com.edu.dlnu.mapper.OrderMapper"></mapper>
+    </mappers>
 </configuration>

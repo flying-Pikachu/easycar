@@ -1,7 +1,6 @@
 package com.edu.dlnu.services;
 
 import com.edu.dlnu.been.User;
-import org.springframework.stereotype.Service;
 
 public interface UserServices {
 

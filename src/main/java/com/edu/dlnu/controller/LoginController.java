@@ -1,6 +1,5 @@
 package com.edu.dlnu.controller;
 
-import com.edu.dlnu.been.User;
 import com.edu.dlnu.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

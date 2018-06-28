@@ -60,7 +60,7 @@
 
         <!--自动生成的*Mapper.java存放路径 -->
 
-        <javaClientGenerator targetPackage="com.edu.dlnu.mapper" targetProject="src/main/java" type="MIXEDMAPPER">
+        <javaClientGenerator targetPackage="com.edu.dlnu.mapper" targetProject="src/main/java" type="XMLMAPPER">
 
             <property  name="enableSubPackages"  value="true"/>
 
@@ -70,9 +70,9 @@
 
 
 
-        <table  tableName="user"  domainObjectName="User"></table>
-        <table  tableName="car"  domainObjectName="Car"></table>
-        <table  tableName="order"  domainObjectName="Order"></table>
+        <table  tableName="users"  domainObjectName="User"></table>
+        <table  tableName="cars"  domainObjectName="Car"></table>
+        <table  tableName="orders"  domainObjectName="Order"></table>
 
 
 

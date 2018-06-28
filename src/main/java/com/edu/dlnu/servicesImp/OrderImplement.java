@@ -17,9 +17,7 @@ public class OrderImplement implements OrderServices {
 
     public List<Order> getAllOrdersByOrderNum(final String orderNum) {
         if (orderNum.equals("")) {
-            System.out.println("dsfsdf" + orderNum);
-            System.out.println(orderMapper.findAllOrders().size());
-            return orderMapper.findAllOrders();
+            return orderMapper.selectByExample(null);
         } else
             return new ArrayList<Order>(){
                 {
