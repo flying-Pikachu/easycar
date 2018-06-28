@@ -21,11 +21,6 @@
 										<label for="userName">账号:</label>
 										<input type="text" name="userName" id="userName" placeholder="请输入账号" value="${userName}"/>
 										<script type="text/javascript">
-                                            // var userName = getQueryString("userName");
-                                            // if (userName != null) {
-                                            //     alert("密码或者账号错误");
-                                            //     document.getElementById("userName").setAttribute('value', userName);
-                                            // }
 											if (document.getElementById("userName").value.length != 0)
 											    alert("密码或者账号错误");
 										</script>
@@ -41,7 +36,7 @@
 									<td>
 										<input type="submit" value="提交" class="submit"/>
                                         <br>
-                                        <a href="Register.html">注册</a>
+                                        <a href="Register.jsp">注册</a>
 									</td>
 								</tr>
 							</table>

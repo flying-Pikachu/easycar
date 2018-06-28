@@ -36,7 +36,7 @@
 									<td>
 										<input type="submit" value="提交" class="submit"/>
                                         <br>
-                                        <a href="Register.html">注册</a>
+                                        <a href="Register.jsp">注册</a>
 									</td>
 								</tr>
 							</table>

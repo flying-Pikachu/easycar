@@ -8,4 +8,6 @@ public interface UserServices {
 
     User searchUserByName(String name);
 
+    boolean insert(String userName, String userPassword);
+
 }

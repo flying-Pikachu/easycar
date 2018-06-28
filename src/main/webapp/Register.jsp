@@ -1,10 +1,11 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Insert title here</title>
-    <link rel="stylesheet" type="text/css" href="css/UserRegister.css"/>
-    <script type="text/javascript" src="js/necessaryMethod.js"></script>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/UserRegister.css"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/necessaryMethod.js"></script>
     <script type="text/javascript">
         function onClicked() {
             var telephone = document.getElementById("telephone").value;
@@ -24,23 +25,20 @@
                 document.myform.submit();
         }
     </script>
-    <script type="text/javascript">
-        var userName = getQueryString("isUsed");
-        if (userName == "true") {
-            alert("用户名已经存在，请重新输入");
-        } else if (userName == "false") {
-            alert("插入失败，请重新插入");
-        }
-    </script>
 </head>
 <body>
 <div class="content">
     <div class="title">
         <div>欢迎登录</div>
-        <div>如果您已是会员，请点击<a href="Login.html">登录</a></div>
+        <div>如果您已是会员，请点击<a href="${pageContext.request.contextPath}/Login.jsp">登录</a></div>
     </div>
+    <input type="hidden" id="isExist" value="${isExist}">
+    <script type="text/javascript">
+         if (document.getElementById("isExist").value.length != 0)
+             alert("用户名已经存在");
+    </script>
     <div class="sign-up">
-        <form action="Register" method="post" name="myform">
+        <form action="${pageContext.request.contextPath}/register/userInsert" method="post" name="myform">
             <table border="0">
                 <tr>
                     <td>
@@ -51,7 +49,7 @@
                 <tr>
                     <td>
                         <label for="username">用户名:</label>
-                        <input type="text" name="userName" id="userName"  placeholder="*请输入您的真实的名字" class="inputfield"/>
+                        <input type="text" name="userName" id="userName"  placeholder="*请输入您的真实的名字" class="inputfield" />
                     </td>
                 </tr>
                 <tr>
