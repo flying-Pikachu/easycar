@@ -27,8 +27,16 @@ public class LoginController {
         }
     }
 
+    @RequestMapping("checkManager")
     public String checkManager(Model model, String userName, String userPassword) {
-        
+        User user = userServices.searchUserByName(userName);
+        System.out.println(user);
+        if (user.getUserpassword().equals(userPassword)) {
+            return "FrontPage";
+        } else {
+            model.addAttribute("userName", userName);
+            return "Login";
+        }
     }
 
     @RequestMapping("goLogin")
