@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--导入属性配置 -->
+    <properties resource="jdbc.properties"></properties>
+
+    <!--指定特定数据库的jdbc驱动jar包的位置 -->
+    <!--<classPathEntry location="${driverLocation}"/>-->
+
+    <context id="default" targetRuntime="MyBatis3">
+
+        <!-- optional，旨在创建class时，对注释进行控制 -->
+        <commentGenerator>
+            <property name="suppressDate" value="true" />
+        </commentGenerator>
+
+        <!--jdbc的数据库连接 -->
+        <!--<jdbcConnection driverClass="${driverClass}" connectionURL="${jdbcUrl}" userId="${username}" password="${password}">-->
+        <!--</jdbcConnection>-->
+        <jdbcConnection  driverClass="com.mysql.jdbc.Driver"
+
+                         connectionURL="${jdbcUrl}"  userId="${username}"  password="${password}"/>
+
+        <!--指定生成的类型为java类型，避免数据库中number等类型字段 -->
+
+        <javaTypeResolver>
+
+            <property name="forceBigDecimals"  value="false"/>
+
+        </javaTypeResolver>
+
+
+
+        <!--自动生成的实体的存放包路径 -->
+
+        <javaModelGenerator targetPackage="com.edu.dlnu.been" targetProject="src/main/java">
+
+            <property  name="enableSubPackages"  value="true"/>
+
+            <property  name="trimStrings"  value="true"/>
+
+        </javaModelGenerator>
+
+
+
+        <!--自动生成的*Mapper.xml文件存放路径 -->
+
+        <sqlMapGenerator targetPackage="com.edu.dlnu.mapper" targetProject="src/main/java">
+
+            <property  name="enableSubPackages"  value="true"/>
+
+
+
+        </sqlMapGenerator>
+
+
+
+        <!--自动生成的*Mapper.java存放路径 -->
+
+        <javaClientGenerator targetPackage="com.edu.dlnu.mapper" targetProject="src/main/java" type="MIXEDMAPPER">
+
+            <property  name="enableSubPackages"  value="true"/>
+
+        </javaClientGenerator>
+
+
+
+
+
+        <table  tableName="user"  domainObjectName="User"></table>
+        <table  tableName="car"  domainObjectName="Car"></table>
+        <table  tableName="order"  domainObjectName="Order"></table>
+
+
+
+
+    </context>
+
+
+
+</generatorConfiguration>
