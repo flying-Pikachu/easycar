@@ -39,9 +39,6 @@ public class UserImplement implements UserServices {
         user.setUserpassword(userPassword);
         user.setIsmanager(0);
         int i = userMapper.insert(user);
-        if (i > 0) {
-            return true;
-        }
-        return false;
+        return i > 0;
     }
 }

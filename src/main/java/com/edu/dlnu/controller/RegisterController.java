@@ -24,9 +24,7 @@ public class RegisterController {
      * @return boolean
      */
     public boolean isExist(String userName) {
-        if (userServices.searchUserByName(userName) != null)
-            return true;
-        return false;
+        return userServices.searchUserByName(userName) != null;
     }
 
     /**

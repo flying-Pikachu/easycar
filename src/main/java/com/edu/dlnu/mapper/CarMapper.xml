@@ -285,4 +285,7 @@
     </set>
     where carID = #{carid,jdbcType=VARCHAR}
   </update>
+  <select id="findAllCars" resultType="com.edu.dlnu.been.Car">
+        SELECT * FROM car;
+    </select>
 </mapper>

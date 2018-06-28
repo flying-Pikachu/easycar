@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.edu.dlnu.dao.OrderMapper">
+<mapper namespace="com.edu.dlnu.OrderMapper">
   <resultMap id="BaseResultMap" type="com.edu.dlnu.been.Order">
     <!--
       WARNING - @mbg.generated
@@ -104,6 +104,9 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+  </select>
+  <select id="findAllOrders" resultType="com.edu.dlnu.been.Order" resultMap="BaseResultMap">
+        SELECT * FROM order;
   </select>
   <delete id="deleteByExample" parameterType="com.edu.dlnu.been.OrderExample">
     <!--

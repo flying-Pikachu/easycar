@@ -130,4 +130,6 @@ public interface CarMapper {
         "where carID = #{carid,jdbcType=VARCHAR}"
     })
     int updateByPrimaryKey(Car record);
+
+    List<Car> findAllCars();
 }

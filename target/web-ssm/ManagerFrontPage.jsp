@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="css/ManagerFrontPage.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ManagerFrontPage.css"/>
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,8 +13,8 @@
 	<div class="operation">
 	<table border="0">
 		<tr>
-			<td><button class="inputfield" onclick="window.location.href='GetOrders?from=true'">订单中心</button></td>
-			<td><button class="inputfield" onclick="window.location.href='ManagerUpdate.html?para=all'">更新车辆信息</button></td>
+			<td><button class="inputfield" onclick="window.location.href='${pageContext.request.contextPath}/orders/allOrders'">订单中心</button></td>
+			<td><button class="inputfield" onclick="window.location.href=''">更新车辆信息</button></td>
 		</tr>
 	</table>
 	</div>

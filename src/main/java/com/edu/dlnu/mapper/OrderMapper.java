@@ -125,4 +125,6 @@ public interface OrderMapper {
         "where orderNum = #{ordernum,jdbcType=VARCHAR}"
     })
     int updateByPrimaryKey(Order record);
+
+    List<Order> findAllOrders();
 }

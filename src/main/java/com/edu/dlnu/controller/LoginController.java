@@ -25,10 +25,7 @@ public class LoginController {
      * @return boolean
      */
     public boolean checkPassword(String userName, String userPassword) {
-        if (userServices.searchUserByName(userName).getUserpassword().equals(userPassword))
-            return true;
-        else
-            return false;
+        return userServices.searchUserByName(userName).getUserpassword().equals(userPassword);
     }
 
     /**
@@ -70,11 +67,11 @@ public class LoginController {
                 // 从管理员界面跳转不是管理员
                 // 跳转回管理员登录界面
                 model.addAttribute("userName", userName);
-                return "ManagerLogin";
+                return "Login";
             }
         } else {
             model.addAttribute("userName", userName);
-            return "Login";
+            return "ManagerLogin";
         }
     }
 

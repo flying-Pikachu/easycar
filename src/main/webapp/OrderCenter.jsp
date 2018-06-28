@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
-    <link rel="stylesheet" type="text/css" href="../css/OrderCenter.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/OrderCenter.css"/>
 </head>
 <body>
 <div class="content">
@@ -17,7 +17,9 @@
                 <div class="ti-l">订单中心</div>
             </div>
             <div class="cars-description">
-                <form action="####" method="post">
+                <form action="${pageContext.request.contextPath}/orders/allOrdersByOrderNum" method="post">
+                    <input type="text" name="orderNum" placeholder="订单号">
+                    <input type="submit" value="查询">
                     <table border="0">
                         <tr>
                             <th>订单号</th>
@@ -25,20 +27,35 @@
                             <th>取车时间</th>
                             <th>还车时间</th>
                             <th>订单状态</th>
+                            <th>费用总计</th>
                         </tr>
-                        <c:forEach items="${}" varStatus="i" var="">
+                        <c:forEach items="${allOrders}" varStatus="i" var="orders">
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>${orders.ordernum}</td>
+                                <td>
+                                        <c:forEach items="${allCars}" varStatus="i" var="cars">
+                                            <c:if test="${allCars.get(orders.carid) != null}">
+                                                ${allCars.get(orders.carid).carbrand + "/" +
+                                                allCars.get(orders.carid).carmodel + "/" };
+                                                <c:when test="${allCars.get(orders.carid).ismanual == 1}">
+                                                    ${"手动挡"}
+                                                </c:when>
+                                                <c:otherwise>
+                                                    ${"自动挡"}
+                                                </c:otherwise>
+                                            </c:if>
+                                        </c:forEach>
+                                </td>
+                                <td>${orders.pickuptime}</td>
+                                <td>${orders.returntime}</td>
+                                <td>${orders.ordercost}</td>
                             </tr>
                         </c:forEach>
                     </table>
                 </form>
-
             </div>
         </div>
     </div>
+</div>
+</body>
 </html>
