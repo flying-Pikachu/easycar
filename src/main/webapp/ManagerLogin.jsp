@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,18 +15,15 @@
 			<div class="manager-login">
 				<div class="login-content">
 					<div class="description">
-					<form action="Login?from=true" method="post">
+					<form action="${pageContext.request.contextPath}/login/checkManager" method="post">
 						<table border="0">
 						
 						<tr>
 							<td>
-								<label for="userName">账号:</label><input type="text" name="userName" id="userName" placeholder="请输入账号" />
+								<label for="userName">账号:</label><input type="text" name="userName" id="userName" placeholder="请输入账号" value="${userName}"/>
 								<script type="text/javascript">
-                                    var userName = getQueryString("userName");
-                                    if (userName != null) {
-                                        alert("密码或者账号错误或者账户并不是管理员账户");
-                                        document.getElementById("userName").setAttribute('value', userName);
-                                    }
+                                    if (document.getElementById("userName").value.length != 0)
+                                        alert("密码或者账号错误");
 								</script>
 							</td>
 						</tr>

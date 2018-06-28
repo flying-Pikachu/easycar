@@ -32,7 +32,16 @@ public class LoginController {
         User user = userServices.searchUserByName(userName);
         System.out.println(user);
         if (user.getUserpassword().equals(userPassword)) {
-            return "FrontPage";
+            if (user.getIsmanager() == 1) {
+                // 从管理员界面跳转并且是管理员
+                // 管理员界面
+                return "ManagerFrontPage";
+            } else {
+                // 从管理员界面跳转不是管理员
+                // 跳转回管理员登录界面
+                model.addAttribute("userName", userName);
+                return "ManagerLogin";
+            }
         } else {
             model.addAttribute("userName", userName);
             return "Login";
