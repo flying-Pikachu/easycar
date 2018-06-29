@@ -39,6 +39,17 @@ public class CarImplement implements CarServices {
 
     /**
      * create by: xzp
+     * description: 查询全部的车辆牌子
+     * create time: 下午6:02 2018/6/29
+     *
+     * @return java.util.List<java.lang.String>
+     */
+    public List<String> getCarsBrands() {
+        return carMapper.selectCarsBrands();
+    }
+
+    /**
+     * create by: xzp
      * description:通过carID获得车辆的信息
      * create time: 上午10:12 2018/6/29
      *

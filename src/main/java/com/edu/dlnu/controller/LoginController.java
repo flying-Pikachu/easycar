@@ -1,5 +1,6 @@
 package com.edu.dlnu.controller;
 
+import com.edu.dlnu.services.CarServices;
 import com.edu.dlnu.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,8 @@ import org.springframework.ui.Model;
 public class LoginController {
     @Autowired
     private UserServices userServices;
+    @Autowired
+    private CarServices carServices;
 
     /**
      * create by: xzp
@@ -39,8 +42,11 @@ public class LoginController {
      */
     @RequestMapping("check")
     public String checkUser(Model model, String userName, String userPassword) {
-        if (checkPassword(userName, userPassword))
+        if (checkPassword(userName, userPassword)) {
+            model.addAttribute("cars", carServices.getCarsByBrand(""));
+            model.addAttribute("carBrands", carServices.getCarsBrands());
             return "FrontPage";
+        }
         model.addAttribute("userName", userName);
         return "Login";
     }

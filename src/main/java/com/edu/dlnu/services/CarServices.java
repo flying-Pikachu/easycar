@@ -11,6 +11,8 @@ public interface CarServices {
 
     Car getCarByCarID(String carID);
 
+    List<String> getCarsBrands();
+
     int delete(String carID);
 
     int update(Car car);

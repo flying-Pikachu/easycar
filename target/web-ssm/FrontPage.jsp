@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
-    <link rel="stylesheet" type="text/css" href="css/FrontPage.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/FrontPage.css"/>
 </head>
 <body>
 <div class="content">
@@ -17,22 +17,20 @@
         <div class="choose-car">
             <table border="1">
                 <tr>
-                    <th>级别</th>
-                    <c:forEach items="${}" varStatus="i" var="">
-                        <td><input type="checkbox" name="" id=""  /></td>
-                    </c:forEach>
-                </tr>
-                <tr>
                     <th>品牌</th>
-                    <c:forEach items="${}" varStatus="i" var="">
-                        <td><input type="checkbox" name="" id=""  /></td>
+                    <c:forEach items="${carBrands}" varStatus="i" var="carB">
+                        <td>
+                            <input type="Radio" name="car_type" id="${carB}"/> <label for="${carB}">${carB}</label>
+                        </td>
                     </c:forEach>
                 </tr>
                 <tr>
                     <th>日租金</th>
-                    <c:forEach items="${}" varStatus="i" var="">
-                        <td><input type="checkbox" name="" id=""  /></td>
-                    </c:forEach>
+                    <td>
+                        <input type="text" name="lowPrice" value="" id="lowPrice">
+                        ~
+                        <input type="text" name="highPrice" value="" id="highPrice">
+                    </td>
                 </tr>
             </table>
             <button class="choose">选车</button>
@@ -45,7 +43,7 @@
                     <th><input type="checkbox" name="inventory" id="inventory" checked="checked" />只看库存</th>
                     <th>全部车型不限里程</th>
                 </tr>
-                <c:forEach items="${}" varStatus="i" var="">
+                <c:forEach items="${cars}" varStatus="i" var="car">
                     <tr>
                         <td><img src="####"/></td>
                         <td></td>

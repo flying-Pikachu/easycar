@@ -82,7 +82,7 @@
 </servlet-mapping>
 
 <welcome-file-list>
-  <welcome-file>ManagerLogin.jsp</welcome-file>
+  <welcome-file>Login.jsp</welcome-file>
 </welcome-file-list>
 
 <!-- session配置 -->
