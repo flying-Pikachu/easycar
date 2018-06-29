@@ -9,5 +9,11 @@ public interface CarServices {
 
     List<Car> getCarsByBrand(String carBrand);
 
+    Car getCarByCarID(String carID);
+
     int delete(String carID);
+
+    int update(Car car);
+
+    int add(Car car);
 }

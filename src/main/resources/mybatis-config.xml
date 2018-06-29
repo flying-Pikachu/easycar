@@ -24,4 +24,5 @@
     <mappers>
         <package name="com.edu.dlnu.mapper"/>
     </mappers>
+
 </configuration>

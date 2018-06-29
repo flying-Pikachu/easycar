@@ -6,8 +6,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Insert title here</title>
 	<script src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
-	<script src="${pageContext.request.contextPath}/js/search.js"></script>
-	<script src="${pageContext.request.contextPath}/js/necessaryMethod.js"></script>
 </head>
 <body>
 <table border="0" style="border-collapse: collapse" width="780">
@@ -21,17 +19,17 @@
 				</tr>
 				<tr>
 					<td height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-						<form action="" method="post" id="form1">
+						<form action="${pageContext.request.contextPath}/cars/allCarsByBrand" method="post" id="form1">
 							品牌:<input type="text" id="carBrand" name="carBrand" placeholder="请输入车辆品牌" height="18">
 							&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="sub" value="查询">
-							&nbsp;&nbsp;&nbsp;&nbsp;<a href="ManagerAdd.jsp">添加</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/ManagerAdd.jsp">添加</a>
 							<input type="hidden" id="hidden1" value="${isSucc}">
 							<script type="text/javascript">
 								var succ = document.getElementById("hidden1").value;
 								if (succ == "false")
-								    alert("删除失败");
+								    alert("更新失败");
 								else if (succ == "true")
-								    alert("删除成功");
+								    alert("更新成功");
 							</script>
 						</form>
 					</td>
@@ -79,7 +77,7 @@
 														<td>${cars.maxmum}</td>
 														<td>${cars.originalprice}</td>
 														<td>${cars.discount}</td>
-														<td><a href="">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">更新</a></td>
+														<td><a href="${pageContext.request.contextPath}/cars/delete?carID=${cars.carid}">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/cars/updateGetCar?carID=${cars.carid}">更新</a></td>
 													</tr>
 												</c:forEach>
 											</table>

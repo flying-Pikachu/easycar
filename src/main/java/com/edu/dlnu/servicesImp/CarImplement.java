@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class CarImplement implements CarServices {
@@ -41,6 +39,18 @@ public class CarImplement implements CarServices {
 
     /**
      * create by: xzp
+     * description:通过carID获得车辆的信息
+     * create time: 上午10:12 2018/6/29
+     *
+     * @param carID 车辆的ID
+     * @return com.edu.dlnu.been.Car
+     */
+    public Car getCarByCarID(String carID) {
+        return carMapper.selectByPrimaryKey(carID);
+    }
+
+    /**
+     * create by: xzp
      * description:通过车辆ID删除车辆
      * create time: 下午10:59 2018/6/28
      *
@@ -48,6 +58,23 @@ public class CarImplement implements CarServices {
      * @return int
      */
     public int delete(String carID) {
+        System.out.println(carID);
         return carMapper.deleteByPrimaryKey(carID);
+    }
+
+    /**
+     * create by: xzp
+     * description:通过ID更新车辆信息
+     * create time: 上午10:10 2018/6/29
+     *
+     * @param car 需要更新的车辆
+     * @return int
+     */
+    public int update(Car car) {
+        return carMapper.updateByPrimaryKey(car);
+    }
+
+    public int add(Car car) {
+        return carMapper.insert(car);
     }
 }

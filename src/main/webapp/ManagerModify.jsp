@@ -1,11 +1,12 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" type="text/css" href="css/ManagerModify.css"/>
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/ManagerModify.css"/>
     </head>
     <body>
     	<div class="content">
@@ -17,37 +18,42 @@
 					<div class="ti">更改车辆</div>
 
 					<div class="cars-description">
-					<form action="####" method="post">
+					<form action="${pageContext.request.contextPath}/cars/update?carID=${car.carid}" method="post">
 						<table border="0">
 						<tr>
-							<td><label for="brand">品牌:</label><input type="text" name="brand" id="brand" disabled="disabled" value="奥迪"/></td>
+							<td><label for="carBrand1">品牌:</label><input type="hidden" name="carBrand" id="carBrand" value="${car.carbrand}"><input type="text" name="carBrand1" id="carBrand1" disabled="disabled" value="${car.carbrand}" /></td>
 						</tr>
 						<tr>
-							<td><label for="level">级别:</label><input type="text" name="level" id="level" placeholder="请输入级别" /></td>
+							<td><label for="carModel">型号:</label><input type="text" name="carModel" id="carModel" value="${car.carmodel}"/></td>
 						</tr>
 						<tr>
-							<td><label for="type">型号:</label><input type="text" name="type" id="type" placeholder="请输入型号" /></td>
+							<td><label for="carStruct">结构:</label><input type="text" name="carStruct" id="carStruct" value="${car.carstruct}" /></td>
 						</tr>
 						<tr>
-							<td><label for="structure">结构:</label><input type="text" name="structure" id="structure" placeholder="请输入结构" /></td>
+							<td><label for="carDisplacement">排量:</label><input type="text" name="carDisplacement" id="carDisplacement" value="${car.cardisplacement}" /></td>
 						</tr>
 						<tr>
-							<td><label for="output">排量:</label><input type="text" name="output" id="output" placeholder="请输入排量" /></td>
+							<td><label for="isManual">变速箱:</label>
+								<select id="isManual" name="isManual">
+									<c:if test="${car.ismanual == 1}">
+										<option value="1"selected>手动档</option>
+										<option value="0">自动挡</option>
+									</c:if>
+									<c:if test="${car.ismanual == 0}">
+										<option value="1">手动档</option>
+										<option value="0" selected>自动挡</option>
+									</c:if>
+								</select>
+							</td>
 						</tr>
 						<tr>
-							<td><label for="velocity">变速箱:</label><input type="text" name="velocity" id="velocity" placeholder="请输入变速箱" /></td>
+							<td><label for="maxMum">乘坐人数:</label><input type="text" name="maxMum" id="maxMum" value="${car.maxmum}" /></td>
 						</tr>
 						<tr>
-							<td><label for="load">乘坐人数:</label><input type="text" name="load" id="load" placeholder="请输入乘坐人数" /></td>
+							<td><label for="originalPrice">原价:</label><input type="text" name="originalPrice" id="originalPrice" value="${car.originalprice}" /></td>
 						</tr>
 						<tr>
-							<td><label for="price">原价:</label><input type="text" name="price" id="price" placeholder="请输入原价" /></td>
-						</tr>
-						<tr>
-							<td><label for="discount">折扣:</label><input type="text" name="discount" id="discount" placeholder="请输入折扣" /></td>
-						</tr>
-						<tr>
-							<td><label for="image">图片:</label><input type="text" name="image" id="image" placeholder="请输入图片" /></td>
+							<td><label for="discount">折扣:</label><input type="text" name="discount" id="discount" value="${car.discount}" /></td>
 						</tr>
 						<tr><td><input type="submit" value="提交" class="submit"/></td></tr>
 						</table>
