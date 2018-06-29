@@ -22,8 +22,6 @@
      -->
 
     <mappers>
-        <mapper class="com.edu.dlnu.mapper.UserMapper"></mapper>
-        <mapper class="com.edu.dlnu.mapper.CarMapper"></mapper>
-        <mapper class="com.edu.dlnu.mapper.OrderMapper"></mapper>
+        <package name="com.edu.dlnu.mapper"/>
     </mappers>
 </configuration>
