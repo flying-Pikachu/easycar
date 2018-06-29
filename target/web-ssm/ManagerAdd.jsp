@@ -35,8 +35,8 @@
 						<tr>
 							<td><label for="isManual">变速箱:</label>
 								<select id="isManual" name="isManual">
-									<option value="1">手动档</option>
 									<option value="0">自动挡</option>
+									<option value="1">手动档</option>
 								</select>
 							</td>
 						</tr>

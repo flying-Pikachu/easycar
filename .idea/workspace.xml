@@ -8,25 +8,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ae09890f-21c8-4be5-8c09-9a34b8be804f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ManagerAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/services/CarServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/services/CarServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-ssm/ManagerAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/ManagerAdd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web-ssm/ManagerModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/ManagerModify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web-ssm/ManagerUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/ManagerUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/services/CarServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/services/CarServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,17 +68,17 @@
       <file leaf-file-name="ManagerUpdate.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+            <state relative-caret-position="-526">
+              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManagerAdd.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManagerAdd.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            <state relative-caret-position="703">
+              <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -95,8 +86,17 @@
       <file leaf-file-name="ManagerModify.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="1197">
+              <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderCenter.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -104,8 +104,8 @@
       <file leaf-file-name="CarController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+            <state relative-caret-position="-2">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <element signature="docComment;method#update#0;class#CarController#0" />
               </folding>
@@ -125,13 +125,13 @@
       <file leaf-file-name="CarImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state relative-caret-position="1205">
+              <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
               <folding>
                 <element signature="e#1884#1885#0" expanded="true" />
                 <element signature="e#1940#1941#0" expanded="true" />
                 <element signature="e#1971#1972#0" expanded="true" />
-                <element signature="e#2014#2015#0" expanded="true" />
+                <element signature="e#2015#2016#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/OrderImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/OrderServices.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerFrontPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/OrdersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java" />
@@ -218,11 +217,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp" />
       </list>
     </option>
   </component>
@@ -301,34 +301,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dlnu" type="462c0819:PsiDirectoryNode" />
-              <item name="been" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easycar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dlnu" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easycar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dlnu" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easycar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dlnu" type="462c0819:PsiDirectoryNode" />
-              <item name="servicesImp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
@@ -556,12 +529,12 @@
       <workItem from="1530097778300" duration="618000" />
       <workItem from="1530098421869" duration="8443000" />
       <workItem from="1530107803486" duration="55705000" />
-      <workItem from="1530254307026" duration="7843000" />
+      <workItem from="1530254307026" duration="11106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73897000" />
+    <option name="totallyTimeSpent" value="77160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
@@ -853,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
@@ -1001,15 +967,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-526">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="1205">
+          <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
           <folding>
             <element signature="e#1884#1885#0" expanded="true" />
             <element signature="e#1940#1941#0" expanded="true" />
             <element signature="e#1971#1972#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2015#2016#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1023,32 +1003,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+        <state relative-caret-position="-2">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="docComment;method#update#0;class#CarController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        <state relative-caret-position="1197">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderCenter.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="359">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
         </state>
       </provider>
     </entry>

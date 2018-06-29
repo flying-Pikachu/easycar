@@ -74,6 +74,15 @@ public class CarImplement implements CarServices {
         return carMapper.updateByPrimaryKey(car);
     }
 
+    /**
+     * create by: xzp
+     * description:
+     * create time: 下午5:07 2018/6/29
+     *
+     * @param car
+     * @return int
+     * @throws
+     */
     public int add(Car car) {
         return carMapper.insert(car);
     }

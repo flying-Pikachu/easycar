@@ -48,6 +48,17 @@
                                 </td>
                                 <td>${orders.pickuptime}</td>
                                 <td>${orders.returntime}</td>
+                                <td>
+                                    <c:if test="${orders.orderstatus == 0}">
+                                        ${"订单提交"}
+                                    </c:if>
+                                    <c:if test="${orders.orderstatus == 1}">
+                                        ${"订单取消"}
+                                    </c:if>
+                                    <c:if test="${orders.orderstatus == 2}">
+                                        ${"交易成功"}
+                                    </c:if>
+                                </td>
                                 <td>${orders.ordercost}</td>
                             </tr>
                         </c:forEach>

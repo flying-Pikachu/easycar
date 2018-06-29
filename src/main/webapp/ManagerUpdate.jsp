@@ -22,7 +22,7 @@
 						<form action="${pageContext.request.contextPath}/cars/allCarsByBrand" method="post" id="form1">
 							品牌:<input type="text" id="carBrand" name="carBrand" placeholder="请输入车辆品牌" height="18">
 							&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="sub" value="查询">
-							&nbsp;&nbsp;&nbsp;&nbsp;<a href="${pageContext.request.contextPath}/ManagerAdd.jsp">添加</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;<a href="/easycar/ManagerAdd.jsp">添加</a>
 							<input type="hidden" id="hidden1" value="${isSucc}">
 							<script type="text/javascript">
 								var succ = document.getElementById("hidden1").value;
