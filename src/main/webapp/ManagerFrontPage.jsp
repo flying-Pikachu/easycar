@@ -14,7 +14,7 @@
 	<table border="0">
 		<tr>
 			<td><button class="inputfield" onclick="window.location.href='${pageContext.request.contextPath}/orders/allOrders'">订单中心</button></td>
-			<td><button class="inputfield" onclick="window.location.href=''">更新车辆信息</button></td>
+			<td><button class="inputfield" onclick="window.location.href='${pageContext.request.contextPath}/cars/allCars'">更新车辆信息</button></td>
 		</tr>
 	</table>
 	</div>

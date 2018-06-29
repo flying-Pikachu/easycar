@@ -23,18 +23,14 @@ public class OrdersController {
     @RequestMapping("allOrders")
     public String getAllOrders(Model model) {
         model.addAttribute("allOrders", orderServices.getAllOrdersByOrderNum(""));
-        model.addAttribute("allCars", carServices.getAllCars());
-        for (Map.Entry<String, Car> entry : carServices.getAllCars().entrySet()) {
-            System.out.println(entry.getKey());
-            System.out.println(entry.getValue());
-        }
+        model.addAttribute("allCars", carServices.getCarsByBrand(""));
         return "OrderCenter";
     }
 
     @RequestMapping("allOrdersByOrderNum")
     public String getAllOrdersByOrderNum(Model model, String orderNum) {
         model.addAttribute("allOrders", orderServices.getAllOrdersByOrderNum(orderNum));
-        model.addAttribute("allCars", carServices.getAllCars());
+        model.addAttribute("allCars", carServices.getCarsByBrand(""));
         return "OrderCenter";
     }
 }

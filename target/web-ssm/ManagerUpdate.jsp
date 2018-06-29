@@ -1,11 +1,13 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Insert title here</title>
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/search.js"></script>
-	<script src="js/necessaryMethod.js"></script>
+	<script src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
+	<script src="${pageContext.request.contextPath}/js/search.js"></script>
+	<script src="${pageContext.request.contextPath}/js/necessaryMethod.js"></script>
 </head>
 <body>
 <table border="0" style="border-collapse: collapse" width="780">
@@ -19,15 +21,19 @@
 				</tr>
 				<tr>
 					<td height="29">&nbsp;&nbsp;&nbsp;&nbsp;
-						品牌:<input type="text" id="carBrand" name="carBrand" placeholder="请输入车辆品牌" height="18">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="sub" value="查询" onclick="search()">
-						&nbsp;&nbsp;&nbsp;&nbsp;<a href="ManagerAdd.html">添加</a>
-						<script type="text/javascript">
-                            var param = getQueryString("para");
-                            if (param != null) {
-                                document.getElementById("sub").click();
-                            }
-						</script>
+						<form action="" method="post" id="form1">
+							品牌:<input type="text" id="carBrand" name="carBrand" placeholder="请输入车辆品牌" height="18">
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="sub" value="查询">
+							&nbsp;&nbsp;&nbsp;&nbsp;<a href="ManagerAdd.jsp">添加</a>
+							<input type="hidden" id="hidden1" value="${isSucc}">
+							<script type="text/javascript">
+								var succ = document.getElementById("hidden1").value;
+								if (succ == "false")
+								    alert("删除失败");
+								else if (succ == "true")
+								    alert("删除成功");
+							</script>
+						</form>
 					</td>
 				</tr>
 				<tr>
@@ -56,6 +62,26 @@
 													<td width="9%"><div align="center">折扣</div></td>
 													<td width="20%"><div align="center">操作</div></td>
 												</tr>
+												<% int j = 1; %>
+												<c:forEach items="${cars}" varStatus="i" var="cars">
+													<tr>
+														<td><%=j++%></td>
+														<td>${cars.carbrand}</td>
+														<td>${cars.carmodel}</td>
+														<td>${cars.carstruct}</td>
+														<td>${cars.cardisplacement}</td>
+														<c:if test="${cars.ismanual == 1}">
+															<td>${"手动挡"}</td>
+														</c:if>
+														<c:if test="${cars.ismanual == 0}">
+															<td>${"自动挡"}</td>
+														</c:if>
+														<td>${cars.maxmum}</td>
+														<td>${cars.originalprice}</td>
+														<td>${cars.discount}</td>
+														<td><a href="">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">更新</a></td>
+													</tr>
+												</c:forEach>
 											</table>
 										</td>
 									</tr>

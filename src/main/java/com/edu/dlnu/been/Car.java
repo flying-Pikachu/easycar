@@ -297,4 +297,19 @@ public class Car {
     public void setDiscount(Double discount) {
         this.discount = discount;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carid='" + carid + '\'' +
+                ", carbrand='" + carbrand + '\'' +
+                ", carmodel='" + carmodel + '\'' +
+                ", carstruct='" + carstruct + '\'' +
+                ", cardisplacement=" + cardisplacement +
+                ", ismanual=" + ismanual +
+                ", maxmum=" + maxmum +
+                ", originalprice=" + originalprice +
+                ", discount=" + discount +
+                '}';
+    }
 }

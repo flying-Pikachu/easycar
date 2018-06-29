@@ -15,6 +15,15 @@ public class OrderImplement implements OrderServices {
     @Autowired
     private OrderMapper orderMapper;
 
+    /**
+     * create by: xzp
+     * description: 通过订单号得到全部的订单，如果好吗是空，返回全部订单
+     * create time: 下午10:20 2018/6/28
+     *
+     * @param orderNum 订单号
+     * @return java.util.List<com.edu.dlnu.been.Order>
+     * @throws
+     */
     public List<Order> getAllOrdersByOrderNum(final String orderNum) {
         if (orderNum.equals("")) {
             return orderMapper.selectByExample(null);
@@ -25,4 +34,6 @@ public class OrderImplement implements OrderServices {
                 }
             };
     }
+
+
 }

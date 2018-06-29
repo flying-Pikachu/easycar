@@ -17,8 +17,7 @@
                 <div class="ti-l">订单中心</div>
             </div>
             <div class="cars-description">
-                <form action="${pageContext.request.contextPath}/orders/all
-                OrdersByOrderNum" method="post">
+                <form action="${pageContext.request.contextPath}/orders/allOrdersByOrderNum" method="post">
                     <input type="text" name="orderNum" placeholder="订单号">
                     <input type="submit" value="查询">
                     <table border="0">
