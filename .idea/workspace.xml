@@ -7,77 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae09890f-21c8-4be5-8c09-9a34b8be804f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/21631f76-d052-4148-834e-1c84d8fd69d0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/21631f76-d052-4148-834e-1c84d8fd69d0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/car1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/car2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/car3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/car4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/CarExample.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/OrderImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/OrderImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/FrontPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/FrontPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/UserExchange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/UserExchange.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/UserOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/UserOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/been/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/been/Car.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/OrdersController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/OrdersController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/controller/OrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/mapper/CarMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/mapper/CarMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/mapper/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/services/CarServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/services/CarServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/CarImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/OrderImplement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/OrderImplement$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/OrderImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/dlnu/servicesImp/OrderImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/FrontPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/FrontPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web-ssm/UserExchange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/UserExchange.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/UserOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/UserOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/been/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/been/Car.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/OrdersController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/OrdersController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/controller/OrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/mapper/CarMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/mapper/CarMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/mapper/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/services/CarServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/services/CarServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/CarImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/OrderImplement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/OrderImplement$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/OrderImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/com/edu/dlnu/servicesImp/OrderImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mapper/CarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mapper/CarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,15 +75,132 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserExchange.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/UserExchange.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="32" column="84" lean-forward="true" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+              <folding>
+                <element signature="n#script#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#2449#3758#0#HTML" />
+                <element signature="e#3877#5687#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="98" column="82" selection-start-line="98" selection-start-column="82" selection-end-line="98" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="352" selection-start-line="352" selection-end-line="352" />
+              <folding>
+                <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
+                <element signature="e#264#390#0" />
+                <element signature="n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="e#1163#1289#0" />
+                <element signature="n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="e#2443#2569#0" />
+                <element signature="n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+                <element signature="n#sql#2;n#mapper#0;n#!!top" />
+                <element signature="e#3717#3843#0" />
+                <element signature="n#select#0;n#mapper#0;n#!!top" />
+                <element signature="e#4071#4197#0" />
+                <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
+                <element signature="n#if#1;n#select#0;n#mapper#0;n#!!top" />
+                <element signature="n#if#2;n#select#0;n#mapper#0;n#!!top" />
+                <element signature="n#select#1;n#mapper#0;n#!!top" />
+                <element signature="e#4596#4722#0" />
+                <element signature="e#10#80#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarServices.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarImplement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-952">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/CarExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CarController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+            <state relative-caret-position="151">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="e#443#454#0" />
                 <element signature="docComment;method#getAllCars#0;class#CarController#0" />
-                <element signature="method#getAllCars#0;class#CarController#0" />
+                <element signature="method#getCarsWithoutHireByCarBrand#0;class#CarController#0" />
                 <element signature="docComment;method#getCarsByBrand#0;class#CarController#0" />
                 <element signature="method#getCarsByBrand#0;class#CarController#0" />
                 <element signature="docComment;method#getCarByCarID#0;class#CarController#0" />
@@ -155,145 +222,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/LoginController.java">
+      <file leaf-file-name="OrderMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#checkPassword#0;class#LoginController#0" />
-                <element signature="docComment;method#checkUser#0;class#LoginController#0" />
-                <element signature="docComment;method#checkManager#0;class#LoginController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrontPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/FrontPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="73" column="89" selection-start-line="73" selection-start-column="89" selection-end-line="73" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarServices.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarImplement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding>
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1619#1620#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-              <folding>
-                <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-                <element signature="e#264#390#0" />
-                <element signature="n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="e#1101#1227#0" />
-                <element signature="n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-                <element signature="n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="e#2381#2507#0" />
-                <element signature="n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
-                <element signature="n#sql#2;n#mapper#0;n#!!top" />
-                <element signature="e#3655#3781#0" />
-                <element signature="n#select#0;n#mapper#0;n#!!top" />
-                <element signature="e#4004#4130#0" />
-                <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#1;n#select#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#2;n#select#0;n#mapper#0;n#!!top" />
-                <element signature="n#select#1;n#mapper#0;n#!!top" />
-                <element signature="e#4529#4655#0" />
-                <element signature="n#select#2;n#mapper#0;n#!!top" />
-                <element signature="n#delete#0;n#mapper#0;n#!!top" />
-                <element signature="n#insert#0;n#mapper#0;n#!!top" />
-                <element signature="n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#1;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#2;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#3;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#4;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#5;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#6;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#7;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#8;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#1;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#2;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#3;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#4;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#5;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#6;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#7;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#8;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-                <element signature="n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#1;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#2;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#3;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#4;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#5;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#6;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#7;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#8;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#update#1;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#update#1;n#mapper#0;n#!!top" />
-                <element signature="n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#0;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#1;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#2;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#3;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#4;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#5;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#6;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#if#7;n#set#0;n#update#2;n#mapper#0;n#!!top" />
-                <element signature="n#update#3;n#mapper#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="847">
+              <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -369,15 +302,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/UserServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/UserImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerFrontPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerUpdate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerAdd.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ManagerModify.jsp" />
@@ -387,18 +317,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/OrderImplement.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/UserExchange.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/UserOrder.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/OrdersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/FrontPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/UserExchange.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java" />
       </list>
     </option>
@@ -426,7 +359,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -480,6 +413,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dlnu" type="462c0819:PsiDirectoryNode" />
+              <item name="been" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="easycar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dlnu" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -496,24 +438,6 @@
               <item name="easycar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dlnu" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easycar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dlnu" type="462c0819:PsiDirectoryNode" />
-              <item name="servicesImp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easycar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -537,7 +461,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="easycar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
@@ -554,10 +486,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easycar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -580,6 +508,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper" />
@@ -762,15 +691,15 @@
       <workItem from="1530098421869" duration="8443000" />
       <workItem from="1530107803486" duration="55705000" />
       <workItem from="1530254307026" duration="22676000" />
-      <workItem from="1530319591202" duration="19887000" />
+      <workItem from="1530319591202" duration="23724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108617000" />
+    <option name="totallyTimeSpent" value="112454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -788,16 +717,16 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39919892" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49930555" weight="0.3257677" />
+      <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.49930555" visible="true" weight="0.32486632" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32977304" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.68125" visible="true" weight="0.32977304" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.68125" weight="0.21122995" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.28680557" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.13819444" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32977304" />
@@ -870,47 +799,12 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/21631f76-d052-4148-834e-1c84d8fd69d0/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="260" selection-start-line="260" selection-end-line="260" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/CarExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/UserServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1084,31 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
-          <folding>
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/OrderImplement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1140,17 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/UserExchange.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#1763#3389#0#HTML" />
-            <element signature="e#3458#5052#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap-3.3.7-dist/js/npm.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1158,20 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-98">
           <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/UserOrder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1254,17 +1098,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/UserOrder.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="59" column="80" selection-start-line="59" selection-start-column="80" selection-end-line="59" selection-end-column="80" />
+        <state relative-caret-position="247">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/UserExchange.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#500#511#0" />
+            <element signature="docComment;method#checkPassword#0;class#LoginController#0" />
+            <element signature="method#checkPassword#0;class#LoginController#0" />
+            <element signature="docComment;method#checkUser#0;class#LoginController#0" />
+            <element signature="docComment;method#checkManager#0;class#LoginController#0" />
+            <element signature="method#checkManager#0;class#LoginController#0" />
+            <element signature="e#2415#2432#0" />
+            <element signature="e#2538#2554#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="68" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/FrontPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding>
+            <element signature="n#page#0;n#jsp:root#0;n#!!top" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+            <element signature="n#td#1;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#1;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1654#1660#0#HTML" />
+            <element signature="n#td#0;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#c:if#0;n#c:forEach#1;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:if#1;n#c:forEach#1;n#jsp:root#0;n#!!top" />
+            <element signature="n#form#0;n#td#2;n#tr#0;n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#c:if#0;n#jsp:root#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#c:forEach#2;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:if#0;n#c:forEach#2;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:if#1;n#c:forEach#2;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:if#1;n#jsp:root#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/car1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        <state relative-caret-position="380">
+          <caret line="349" column="9" lean-forward="true" selection-start-line="349" selection-start-column="9" selection-end-line="349" selection-end-column="9" />
           <folding>
             <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
             <element signature="e#264#390#0" />
@@ -1304,9 +1223,19 @@
             <element signature="n#select#1;n#mapper#0;n#!!top" />
             <element signature="e#4529#4655#0" />
             <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="n#select#3;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#select#3;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#select#3;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#select#3;n#mapper#0;n#!!top" />
             <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="e#5330#5456#0" />
+            <element signature="n#delete#1;n#mapper#0;n#!!top" />
+            <element signature="e#5615#5741#0" />
+            <element signature="n#if#0;n#delete#1;n#mapper#0;n#!!top" />
             <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="e#5932#6058#0" />
             <element signature="n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="e#6594#6720#0" />
             <element signature="n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#0;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#1;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
@@ -1327,7 +1256,10 @@
             <element signature="n#if#6;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#7;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#8;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#select#4;n#mapper#0;n#!!top" />
+            <element signature="e#8378#8504#0" />
             <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="e#8704#8830#0" />
             <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#if#1;n#set#0;n#update#0;n#mapper#0;n#!!top" />
@@ -1340,8 +1272,10 @@
             <element signature="n#if#8;n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#if#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#update#1;n#mapper#0;n#!!top" />
+            <element signature="e#10049#10175#0" />
             <element signature="n#if#0;n#update#1;n#mapper#0;n#!!top" />
             <element signature="n#update#2;n#mapper#0;n#!!top" />
+            <element signature="e#10892#11018#0" />
             <element signature="n#set#0;n#update#2;n#mapper#0;n#!!top" />
             <element signature="n#if#0;n#set#0;n#update#2;n#mapper#0;n#!!top" />
             <element signature="n#if#1;n#set#0;n#update#2;n#mapper#0;n#!!top" />
@@ -1352,56 +1286,120 @@
             <element signature="n#if#6;n#set#0;n#update#2;n#mapper#0;n#!!top" />
             <element signature="n#if#7;n#set#0;n#update#2;n#mapper#0;n#!!top" />
             <element signature="n#update#3;n#mapper#0;n#!!top" />
+            <element signature="e#11987#12113#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/UserExchange.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="335">
+          <caret line="32" column="84" lean-forward="true" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
           <folding>
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
+            <element signature="n#script#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2449#3758#0#HTML" />
+            <element signature="e#3877#5687#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="334" column="18" selection-start-line="334" selection-start-column="18" selection-end-line="334" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/been/CarExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/mapper/CarMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="98" column="82" selection-start-line="98" selection-start-column="82" selection-end-line="98" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CarMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="352" selection-start-line="352" selection-end-line="352" />
+          <folding>
+            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
+            <element signature="e#264#390#0" />
+            <element signature="n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="e#1163#1289#0" />
+            <element signature="n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="e#2443#2569#0" />
+            <element signature="n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#1;n#mapper#0;n#!!top" />
+            <element signature="n#sql#2;n#mapper#0;n#!!top" />
+            <element signature="e#3717#3843#0" />
+            <element signature="n#select#0;n#mapper#0;n#!!top" />
+            <element signature="e#4071#4197#0" />
+            <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#1;n#mapper#0;n#!!top" />
+            <element signature="e#4596#4722#0" />
+            <element signature="e#10#80#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/services/CarServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="114">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/FrontPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/servicesImp/CarImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="73" column="89" selection-start-line="73" selection-start-column="89" selection-end-line="73" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#checkPassword#0;class#LoginController#0" />
-            <element signature="docComment;method#checkUser#0;class#LoginController#0" />
-            <element signature="docComment;method#checkManager#0;class#LoginController#0" />
-          </folding>
+        <state relative-caret-position="-952">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/dlnu/controller/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+        <state relative-caret-position="151">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="e#443#454#0" />
             <element signature="docComment;method#getAllCars#0;class#CarController#0" />
-            <element signature="method#getAllCars#0;class#CarController#0" />
+            <element signature="method#getCarsWithoutHireByCarBrand#0;class#CarController#0" />
             <element signature="docComment;method#getCarsByBrand#0;class#CarController#0" />
             <element signature="method#getCarsByBrand#0;class#CarController#0" />
             <element signature="docComment;method#getCarByCarID#0;class#CarController#0" />

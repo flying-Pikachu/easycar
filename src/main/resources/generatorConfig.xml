@@ -70,9 +70,9 @@
 
 
 
-        <table  tableName="users"  domainObjectName="User"></table>
+        <!--<table  tableName="users"  domainObjectName="User"></table>-->
         <table  tableName="cars"  domainObjectName="Car"></table>
-        <table  tableName="orders"  domainObjectName="Order"></table>
+        <!--<table  tableName="orders"  domainObjectName="Order"></table>-->
 
 
 

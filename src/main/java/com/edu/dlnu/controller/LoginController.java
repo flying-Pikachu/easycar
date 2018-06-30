@@ -2,18 +2,13 @@ package com.edu.dlnu.controller;
 
 import com.edu.dlnu.been.Car;
 import com.edu.dlnu.been.User;
-import com.edu.dlnu.mapper.CarMapper;
 import com.edu.dlnu.services.CarServices;
 import com.edu.dlnu.services.UserServices;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.ui.Model;
-
-import java.util.List;
 
 
 @Controller
@@ -23,9 +18,6 @@ public class LoginController {
     private UserServices userServices;
     @Autowired
     private CarServices carServices;
-
-    @Autowired
-    private CarMapper carMapper;
 
     /**
      * create by: xzp
