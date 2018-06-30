@@ -53,6 +53,23 @@ public class CarController {
 
     /**
      * create by: xzp
+     * description:通过车辆的ID得到这辆车的全部信息
+     * create time: 下午7:38 2018/6/29
+     *
+     * @param model
+     * @param carID
+     * @return java.lang.String
+     */
+    @RequestMapping({"carByCarID", "/"})
+    public String getCarByCarID(Model model, @RequestParam String carID, String userName) {
+        System.out.println(carID);
+        model.addAttribute("car", carServices.getCarByCarID(carID));
+        model.addAttribute("userName", userName);
+        return "UserExchange";
+    }
+
+    /**
+     * create by: xzp
      * description: 按照车辆号进行删除
      * create time: 下午3:37 2018/6/29
      *

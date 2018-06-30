@@ -10,6 +10,7 @@
 </head>
 <body>
 <div class="content">
+    <input type="hidden" value="${userName}" id="userName">
     <div class="title">
         Easy-Car易人租车管理系统
     </div>
@@ -37,18 +38,20 @@
         </div>
         <div class="cars-hire">
             <table border="0">
-                <tr>
-                    <th><input type="checkbox" name="sequence" id="sequence" checked="checked" />默认排序</th>
-                    <th>租金由低到高</th>
-                    <th><input type="checkbox" name="inventory" id="inventory" checked="checked" />只看库存</th>
-                    <th>全部车型不限里程</th>
-                </tr>
+                <%--<tr>--%>
+                <%--<th><input type="checkbox" name="sequence" id="sequence" checked="checked" />默认排序</th>--%>
+                <%--<th>租金由低到高</th>--%>
+                <%--<th><input type="checkbox" name="inventory" id="inventory" checked="checked" />只看库存</th>--%>
+                <%--<th>全部车型不限里程</th>--%>
+                <%--</tr>--%>
                 <c:forEach items="${cars}" varStatus="i" var="car">
                     <tr>
-                        <td><img src="####"/></td>
-                        <td></td>
-                        <td></td>
-                        <td><button class="hire-car">租车</button></td>
+                            <%--<td><img src="####"/></td>--%>
+                        <td>
+                            <form action="${pageContext.request.contextPath}/cars/carByCarID?carID=${car.carid}" method="post">
+                                <input type="submit" value="租车">
+                            </form>
+                        </td>
                     </tr>
                 </c:forEach>
             </table>

@@ -35,5 +35,17 @@ public class OrderImplement implements OrderServices {
             };
     }
 
+    /**
+     * create by: xzp
+     * description: 添加一个订单
+     * create time: 下午9:08 2018/6/29
+     *
+     * @param order
+     * @return int
+     */
+    public int add(Order order) {
+        return orderMapper.insert(order);
+    }
+
 
 }

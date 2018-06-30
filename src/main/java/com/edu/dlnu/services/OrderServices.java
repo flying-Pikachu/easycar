@@ -8,4 +8,7 @@ public interface OrderServices {
 
     List<Order> getAllOrdersByOrderNum(String OrderNum);
 
+    int add(Order order);
+
+
 }

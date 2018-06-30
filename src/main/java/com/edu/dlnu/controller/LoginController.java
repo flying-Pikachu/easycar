@@ -45,6 +45,7 @@ public class LoginController {
         if (checkPassword(userName, userPassword)) {
             model.addAttribute("cars", carServices.getCarsByBrand(""));
             model.addAttribute("carBrands", carServices.getCarsBrands());
+            model.addAttribute("userName", userName);
             return "FrontPage";
         }
         model.addAttribute("userName", userName);
