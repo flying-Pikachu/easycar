@@ -927,9 +927,9 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="234" parent="11" name="car"/>
-    <table id="235" parent="11" name="order"/>
-    <table id="236" parent="11" name="user"/>
+    <table id="234" parent="11" name="cars"/>
+    <table id="235" parent="11" name="orders"/>
+    <table id="236" parent="11" name="users"/>
     <column id="237" parent="234" name="carID">
       <Position>1</Position>
       <DataType>varchar(45)|0s</DataType>
@@ -1047,13 +1047,15 @@
     <foreign-key id="257" parent="235" name="order_userName">
       <ColNames>userName</ColNames>
       <RefSchemaName>yiren</RefSchemaName>
-      <RefTableName>user</RefTableName>
+      <RefTableName>users</RefTableName>
       <RefColNames>userName</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <foreign-key id="258" parent="235" name="order_carID">
       <ColNames>carID</ColNames>
       <RefSchemaName>yiren</RefSchemaName>
-      <RefTableName>car</RefTableName>
+      <RefTableName>cars</RefTableName>
       <RefColNames>carID</RefColNames>
     </foreign-key>
     <column id="259" parent="236" name="userName">

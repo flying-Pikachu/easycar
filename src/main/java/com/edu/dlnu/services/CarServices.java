@@ -1,6 +1,7 @@
 package com.edu.dlnu.services;
 
 import com.edu.dlnu.been.Car;
+import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 import java.util.Map;
@@ -13,9 +14,14 @@ public interface CarServices {
 
     List<String> getCarsBrands();
 
+    PageInfo getCarsWithoutHire(int pn);
+
+    PageInfo getCarsWithoutHireByCarBrand(int pn, String carBrand);
+
     int delete(String carID);
 
     int update(Car car);
 
     int add(Car car);
+
 }

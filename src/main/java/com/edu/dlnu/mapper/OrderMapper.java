@@ -93,4 +93,6 @@ public interface OrderMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Order record);
+
+    Order selectByCarID(String carID);
 }

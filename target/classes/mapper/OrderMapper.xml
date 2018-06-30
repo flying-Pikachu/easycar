@@ -115,6 +115,9 @@
     from orders
     where orderNum = #{ordernum,jdbcType=VARCHAR}
   </select>
+  <select id="selectByCarID" parameterType="java.lang.String" resultType="com.edu.dlnu.been.Order">
+    select * from orders where carID = #{carID}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     <!--
       WARNING - @mbg.generated

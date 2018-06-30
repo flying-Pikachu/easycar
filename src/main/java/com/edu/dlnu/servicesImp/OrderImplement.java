@@ -30,7 +30,8 @@ public class OrderImplement implements OrderServices {
         } else
             return new ArrayList<Order>(){
                 {
-                    add(orderMapper.selectByPrimaryKey(orderNum));
+                    if (orderMapper.selectByPrimaryKey(orderNum) != null)
+                        add(orderMapper.selectByPrimaryKey(orderNum));
                 }
             };
     }

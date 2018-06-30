@@ -1,7 +1,10 @@
 package com.edu.dlnu.controller;
 
 import com.edu.dlnu.been.Car;
+import com.edu.dlnu.mapper.CarMapper;
 import com.edu.dlnu.services.CarServices;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("cars")
@@ -27,10 +32,19 @@ public class CarController {
      */
     @RequestMapping("allCars")
     public String getAllCars(Model model) {
+
         model.addAttribute("cars", carServices.getCarsByBrand(""));
         for (Car c : carServices.getCarsByBrand(""))
             System.out.println(c);
         return "ManagerUpdate";
+    }
+
+    @RequestMapping({"carsWithoutHire", "/"})
+    public String getCarsWithoutHireByCarBrand(Model model, String carBrand, @RequestParam int pn) {
+        System.out.println("carBrand = " + carBrand);
+        model.addAttribute("page", carServices.getCarsWithoutHireByCarBrand(pn, carBrand));
+        model.addAttribute("carBrands", carServices.getCarsBrands());
+        return "FrontPage";
     }
 
     /**
@@ -61,7 +75,7 @@ public class CarController {
      * @return java.lang.String
      */
     @RequestMapping({"carByCarID", "/"})
-    public String getCarByCarID(Model model, @RequestParam String carID, String userName) {
+    public String getCarByCarID(Model model, @RequestParam String carID, @RequestParam String userName) {
         System.out.println(carID);
         model.addAttribute("car", carServices.getCarByCarID(carID));
         model.addAttribute("userName", userName);

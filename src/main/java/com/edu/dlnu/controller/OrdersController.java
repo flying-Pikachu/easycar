@@ -72,6 +72,7 @@ public class OrdersController {
         while (orderServices.getAllOrdersByOrderNum(""+i).size() != 0) {
             i++;
         }
+        System.out.println("userName = " + userName);
         final String orderNum = i + "";
         int isAdd = orderServices.add(new Order(){
             {
@@ -80,8 +81,8 @@ public class OrdersController {
                 setUsername(userName);
                 String[] subPick = pickUpTime.split("-");
                 String[] retPick = returnTime.split("-");
-                setPickuptime(new Date(Integer.parseInt(subPick[0]), Integer.parseInt(subPick[1]), Integer.parseInt(subPick[2])));
-                setReturntime(new Date(Integer.parseInt(retPick[0]), Integer.parseInt(retPick[1]), Integer.parseInt(retPick[2])));
+                setPickuptime(new Date(Integer.parseInt(subPick[0]), Integer.parseInt(subPick[1]) - 1, Integer.parseInt(subPick[2])));
+                setReturntime(new Date(Integer.parseInt(retPick[0]), Integer.parseInt(retPick[1]) - 1, Integer.parseInt(retPick[2])));
                 setOrdercost(orderCost);
                 setOrderstatus(0);
             }
@@ -92,6 +93,7 @@ public class OrdersController {
             model.addAttribute("isSucc", "false");
         model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
         model.addAttribute("car", carServices.getCarByCarID(carID));
-        return "OrderModify";
+        model.addAttribute("userName", userName);
+        return "UserOrder";
     }
 }

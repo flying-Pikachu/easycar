@@ -1,12 +1,19 @@
 package com.edu.dlnu.controller;
 
+import com.edu.dlnu.been.Car;
+import com.edu.dlnu.been.User;
+import com.edu.dlnu.mapper.CarMapper;
 import com.edu.dlnu.services.CarServices;
 import com.edu.dlnu.services.UserServices;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.ui.Model;
+
+import java.util.List;
 
 
 @Controller
@@ -16,6 +23,9 @@ public class LoginController {
     private UserServices userServices;
     @Autowired
     private CarServices carServices;
+
+    @Autowired
+    private CarMapper carMapper;
 
     /**
      * create by: xzp
@@ -27,7 +37,10 @@ public class LoginController {
      * @return boolean
      */
     public boolean checkPassword(String userName, String userPassword) {
-        return userServices.searchUserByName(userName).getUserpassword().equals(userPassword);
+        User user = userServices.searchUserByName(userName);
+        if (user == null)
+            return false;
+        return user.getUserpassword().equals(userPassword);
     }
 
     /**
@@ -43,7 +56,7 @@ public class LoginController {
     @RequestMapping("check")
     public String checkUser(Model model, String userName, String userPassword) {
         if (checkPassword(userName, userPassword)) {
-            model.addAttribute("cars", carServices.getCarsByBrand(""));
+            model.addAttribute("page", carServices.getCarsWithoutHireByCarBrand(1,""));
             model.addAttribute("carBrands", carServices.getCarsBrands());
             model.addAttribute("userName", userName);
             return "FrontPage";

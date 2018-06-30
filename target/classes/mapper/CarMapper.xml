@@ -121,6 +121,17 @@
   <select id="selectCarsBrands" resultType="java.lang.String">
     select carBrand from cars group by carBrand;
   </select>
+  <select id="selectCarsWithoutHireByCarBrand" parameterType="java.lang.String" resultType="com.edu.dlnu.been.Car">
+    select * from cars
+    <where>
+      carID not in (select carID from orders)
+      <if test="carBrand != null">
+        <if test="carBrand != ''">
+          AND carBrand = ${carBrand}
+        </if>
+      </if>
+    </where>
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     <!--
       WARNING - @mbg.generated

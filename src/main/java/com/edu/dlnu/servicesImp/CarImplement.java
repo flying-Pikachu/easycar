@@ -3,7 +3,11 @@ package com.edu.dlnu.servicesImp;
 import com.edu.dlnu.been.Car;
 import com.edu.dlnu.been.CarExample;
 import com.edu.dlnu.mapper.CarMapper;
+import com.edu.dlnu.mapper.OrderMapper;
 import com.edu.dlnu.services.CarServices;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +18,9 @@ import java.util.List;
 public class CarImplement implements CarServices {
     @Autowired
     private CarMapper carMapper;
+
+    @Autowired
+    private OrderMapper orderMapper;
 
     /**
      * create by: xzp
@@ -31,10 +38,37 @@ public class CarImplement implements CarServices {
                     carExample = new CarExample();
                     carExample.or().andCarbrandEqualTo(carBrand);
                 }
-                for (Car c : carMapper.selectByExample(carExample))
+                for (Car c : carMapper.selectByExample(carExample)) {
                     add(c);
+                }
             }
         };
+    }
+
+    /**
+     * create by: xzp
+     * description: 得到全部的没有被租用的车辆
+     * create time: 上午9:06 2018/6/30
+     *
+     * @return java.util.List<com.edu.dlnu.been.Car>
+     */
+    public PageInfo getCarsWithoutHire(int pn) {
+        return getCarsWithoutHireByCarBrand(pn, "");
+    }
+
+    /**
+     * create by: xzp
+     * description: 得到某一种类型的未被租用的车辆
+     * create time: 上午9:10 2018/6/30
+     *
+     * @param carBrand
+     * @return com.github.pagehelper.PageInfo
+     */
+    public PageInfo getCarsWithoutHireByCarBrand(int pn, String carBrand) {
+        PageHelper.startPage(pn, 3);
+        List<Car> itemList = carMapper.selectCarsWithoutHireByCarBrand(carBrand);
+        PageInfo<Car> pageInfo = new PageInfo<Car>(itemList);
+        return pageInfo;
     }
 
     /**

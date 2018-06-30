@@ -14,7 +14,6 @@
 				<div class="modify-car">
 					<div class="ti">
 						<div class="ti-l">车辆信息</div>
-						<div class="ti-r"><a href="####">更改</a></div>
 					</div>
 					<div class="cars-description">
 					<form action="${pageContext.request.contextPath}/orders/add" method="post">

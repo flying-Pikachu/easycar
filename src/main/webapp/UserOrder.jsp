@@ -12,48 +12,34 @@
 				<div class="modify-car">
 					<div class="ti">
 						<div class="ti-l">订单提交成功</div>
-						<div class="ti-r"><a href="####">应付总价</a></div>
+						<div class="ti-r">应付总价:${order.ordercost}</div>
 					</div>
 					<div class="ti-detail">
-						<div class="order-no">订单号</div>
-						<div class="order-name">租车人</div>
-						<div class="order-date">租期</div>
-						<div class="order-property">取车时需要刷取预授权</div>
+						<div class="order-no">订单号: ${order.ordernum}</div>
+						<div class="order-name">租车人:${order.username}</div>
+						<div class="order-date">租期${order.pickuptime}~${order.returntime}</div>
 					</div>
 					<div class="car-message">车辆信息</div>
 					<div class="cars-description">
-					
-							<form action="####" method="post">
-								<table border="0">
-									<tr>
-										<td>取车时间</td>
-										<td>
-											
-										</td>
-									</tr>
-									<tr>
-										<td>还车时间</td>
-										<td>
-											
-										</td>
-									</tr>
-									<tr>
-										<td>取车地点</td>
-										
-									</tr>
-									<tr>
-										<td>还车地点</td>
-										
-									</tr>
-									<tr>
-										<td>车辆租赁费</td>
-										<td >219*2=<label>￥438</label></td>
-									</tr>
-									<tr>
-										<td><input type="submit" value="提交" class="submit"/></td>
-									</tr>
-								</table>
-							</form>
+						<table border="0">
+							<tr>
+								<td>取车时间</td>
+								<td>
+									${order.pickuptime}
+								</td>
+							</tr>
+							<tr>
+								<td>还车时间</td>
+								<td>
+									${order.returntime}
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="submit" value="提交" class="submit"/>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>

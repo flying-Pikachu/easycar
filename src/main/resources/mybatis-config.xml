@@ -20,6 +20,18 @@
     由于使用spring和mybatis的整合包进行mapper扫描，这里不需要配置了。
     必须遵循：mapper.xml和mapper.java文件同名且在一个目录
      -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+            <property name="offsetAsPageNum" value="false"/>
+            <property name="rowBoundsWithCount" value="false"/>
+            <property name="pageSizeZero" value="true"/>
+            <property name="reasonable" value="false"/>
+            <property name="supportMethodsArguments" value="false"/>
+            <property name="returnPageInfo" value="none"/>
+        </plugin>
+
+    </plugins>
 
     <mappers>
         <package name="com.edu.dlnu.mapper"/>

@@ -59,6 +59,7 @@
         <!--有问题-->
         <property name="configLocation" value="classpath:mybatis-config.xml" />
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
