@@ -24,7 +24,7 @@
 								<table border="0" id="carInformation">
 									<tr >
 										<td colspan="3">
-											<img src="${pageContext.request.contextPath}/img/${car.img}" align="center"/>
+											<img src="${pageContext.request.contextPath}/images/${car.img}" align="center"/>
 										</td>
 									</tr>
 									<tr>

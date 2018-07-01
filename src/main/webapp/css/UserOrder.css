@@ -13,15 +13,14 @@
 	height: 100px;
 	margin:5px;
 	margin-left: auto;
-	margin-right: auto;	
-	border: 1px solid #000000;	
+	margin-right: auto;
+	border: 0px solid #000000;
 	font-stretch: expanded;
 	font-style: italic;
 	font-size: 30px;
 	color: lightseagreen;
 	font-family:"arial black";
 	letter-spacing: 3px;
-	
 }
 .modify-cars{
 	width: 900px;
@@ -34,20 +33,19 @@
 	width: 850px;
 	height: 550px;
 	margin:25px;
-	border: 1px solid #000000;
+	border: 0px solid #000000;
 }
 .ti{
 	width:800px;
-	height: 100px;
+	height: 50px;
 	font-size: 25px;
 	color: darkcyan;
 	letter-spacing: 3px;
 	margin: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	border-bottom: 1px;
-	border-bottom-color: #000000;
-	border: 1px solid #000000;
+	border: 0px solid #000000;
+	border-bottom: 1px solid #20B2AA;
 }
 .ti-l{
 	float: left;
@@ -57,39 +55,46 @@
 }
 .ti-detail{
 	width: 800px;
-	height: 150px;
+	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid #000000;
+	border: 0px solid #000000;
+	border-bottom: 1px solid #20B2AA;
+}
+.cars-description{
+	width: 800px;
+	height: 50px;
+}
+.tiCar{
+	width: 800px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px solid #000000;
+	border-bottom: 1px solid #20B2AA;
 }
 .order-no{
 	float: left;
 	width: 100px;
 	height: 50px;
-	border: 1px solid #000000;
+	border: 0px solid #000000;
 }
 .order-name{
-	float: right;
+	float: left;
 	width: 100px;
 	height: 50px;
-	border: 1px solid #000000;
+	border: 0px solid #000000;
 }
 .order-date{
-	float: right;
-	width: 100px;
+	float: left;
 	height: 50px;
-	border: 1px solid #000000;
+	border: 0px solid #000000;
 }
 .order-property{
 	float: right;
 	width: 100px;
 	height: 50px;
-	border: 1px solid #000000;
-}
-.cars-description{
-	width: 800px;
-	height: 500px;
-	margin: 5px;
+	border: 0px solid #000000;
 }
 table{
 	margin-left: auto;
@@ -101,10 +106,10 @@ table{
 	width: 100px;
 }
 input{
-	width: 200px;	
+	width: 200px;
 }
 .submit{
-	widows: 200px;
+	widows: 10px;
 	background-color: darkcyan;
 	color: #FFFFFF;
 }

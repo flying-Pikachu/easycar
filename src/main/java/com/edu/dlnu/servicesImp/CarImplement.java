@@ -72,6 +72,27 @@ public class CarImplement implements CarServices {
 
     /**
      * create by: xzp
+     * description: 通过车品牌，最低价，最高价查询
+     * create time: 上午9:10 2018/7/1
+     *
+     * @param pn
+     * @param carBrand
+     * @param lowPrice
+     * @param highPrice
+     * @return com.github.pagehelper.PageInfo
+     */
+    public PageInfo getCarsWithoutHireByBrandAndPrice(int pn, String carBrand, double lowPrice, double highPrice) {
+
+        System.out.println("lowPrice = " + lowPrice);
+        System.out.println("highPrice = " + highPrice);
+        PageHelper.startPage(pn, 3);
+        List<Car> list = carMapper.selectCarsWithoutHireByBrandAndPrice(carBrand, 0, 1000);
+        PageInfo<Car> pageInfo = new PageInfo<Car>(list);
+        return pageInfo;
+    }
+
+    /**
+     * create by: xzp
      * description: 查询全部的车辆牌子
      * create time: 下午6:02 2018/6/29
      *

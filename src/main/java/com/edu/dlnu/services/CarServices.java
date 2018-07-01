@@ -17,6 +17,8 @@ public interface CarServices {
 
     PageInfo getCarsWithoutHireByCarBrand(int pn, String carBrand);
 
+    PageInfo getCarsWithoutHireByBrandAndPrice(int pn, String carBrand, double lowPrice, double highPrice);
+
     int delete(String carID);
 
     int update(Car car);

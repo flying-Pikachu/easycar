@@ -363,4 +363,7 @@
       </if>
     </where>
   </select>
+  <select id="selectCarsWithoutHireByBrandAndPrice" resultType="com.edu.dlnu.been.Car">
+    select * from cars where carBrand = ${carBrand} and originalPrice between ${lowPrice} and ${highPrice}
+  </select>
 </mapper>

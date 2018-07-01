@@ -33,13 +33,34 @@ public class CarController {
         return "ManagerUpdate";
     }
 
+    /**
+     * create by: xzp
+     * description: 通过
+     * create time: 上午8:57 2018/7/1
+     *
+     * @param model model
+     * @param carBrand carBrand
+     * @param pn 页数
+     * @return java.lang.String
+     */
     @RequestMapping({"carsWithoutHire", "/"})
-    public String getCarsWithoutHireByCarBrand(Model model, String carBrand, @RequestParam int pn) {
+    public String getCarsWithoutHire(Model model, @RequestParam String carBrand, @RequestParam int pn, double lowPrice, double highPrice) {
         System.out.println("carBrand = " + carBrand);
+        System.out.println("pn = " + pn);
+        System.out.println("lowPrice = " + lowPrice);
+        System.out.println("highPrice = " + highPrice);
         model.addAttribute("page", carServices.getCarsWithoutHireByCarBrand(pn, carBrand));
         model.addAttribute("carBrands", carServices.getCarsBrands());
         return "FrontPage";
     }
+
+//    @RequestMapping({"carsWithoutHireByBrandAndPrice", "/"})
+//    public String getCarsWithoutHireByCarBrandAndPrice(Model model,) {
+//        System.out.println("lowPrice = " + lowPrice);
+//        System.out.println("highPrice = " + highPrice);
+//        return "FromtPage";
+//    }
+
 
     /**
      * create by: xzp

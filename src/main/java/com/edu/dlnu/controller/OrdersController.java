@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.ui.Model;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 
 @Controller
@@ -78,8 +83,8 @@ public class OrdersController {
                 setUsername(userName);
                 String[] subPick = pickUpTime.split("-");
                 String[] retPick = returnTime.split("-");
-                setPickuptime(new Date(Integer.parseInt(subPick[0]), Integer.parseInt(subPick[1]) - 1, Integer.parseInt(subPick[2])));
-                setReturntime(new Date(Integer.parseInt(retPick[0]), Integer.parseInt(retPick[1]) - 1, Integer.parseInt(retPick[2])));
+                setPickuptime(new Date(Integer.parseInt(subPick[0]) - 1900, Integer.parseInt(subPick[1]) - 1, Integer.parseInt(subPick[2])));
+                setReturntime(new Date(Integer.parseInt(retPick[0]) - 1900, Integer.parseInt(retPick[1]) - 1, Integer.parseInt(retPick[2])));
                 setOrdercost(orderCost);
                 setOrderstatus(0);
             }
@@ -88,6 +93,35 @@ public class OrdersController {
             model.addAttribute("isSucc", "true");
         else
             model.addAttribute("isSucc", "false");
+//        Order order = orderServices.getAllOrdersByOrderNum(orderNum).get(0);
+//        String pickUpTimedate = order.getPickuptime().toString();
+//        String returnTimedate = order.getReturntime().toString();
+//        System.out.println(pickUpTimedate);
+//        System.out.println(returnTimedate);
+//        Date fecha = new java.util.Date(pickUpTimedate);
+//        Date fechb = new java.util.Date(returnTimedate);
+//        DateFormat formatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss Z yyyy", Locale.US);
+//        Date date;
+//        date = (Date)formatter.parse(fecha.toString());
+//
+//        Calendar cal = Calendar.getInstance();
+//        cal.setTime(date);
+//        String formatedDate = cal.get(Calendar.YEAR) + "/" +
+//                (cal.get(Calendar.MONTH) + 1) +
+//                "/" +         cal.get(Calendar.DATE);
+//        order.setPickuptime(formatedDate);
+//        System.out.println("pickup = " + order.getPickuptime());
+//
+//        date = (Date)formatter.parse(fechb.toString());
+//
+//        cal = Calendar.getInstance();
+//        cal.setTime(date);
+//        formatedDate = cal.get(Calendar.YEAR) + "/" +
+//                (cal.get(Calendar.MONTH) + 1) +
+//                "/" +         cal.get(Calendar.DATE);
+//        order.setReturntime(new Date(formatedDate));
+//        System.out.println("return = " + order.getReturntime());
+
         model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
         model.addAttribute("car", carServices.getCarByCarID(carID));
         model.addAttribute("userName", userName);

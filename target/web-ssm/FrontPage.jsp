@@ -23,40 +23,61 @@
         </div>
     </nav>
     <div id="title"><h1 align="center">Easy-Car易人租车系统</h1></div>
-    <table id="select" class="table table-bordered">
-        <tr>
-            <td>品牌</td>
-            <c:forEach items="${carBrands}" varStatus="i" var="carB">
-                <td>
-                    <input type="Radio" name="car_type" id="${carB}"/> <label for="${carB}">${carB}</label>
+    <form action="${pageContext.request.contextPath}/cars/carsWithoutHire">
+        <table id="select" class="table table-bordered">
+            <tr>
+                <td>品牌</td>
+                <c:forEach items="${carBrands}" varStatus="i" var="carB">
+                    <td>
+                        <input type="Radio" name="carBrand" id="${carB}"/>
+                        <input type="hidden" name="pn" id="pn" value="1">
+                        <label for="${carB}">
+                                ${carB}
+                        </label>
+                    </td>
+                </c:forEach>
+            </tr>
+            <tr>
+                <td>日租金</td>
+                <td colspan="4" align="center">
+                    <input type="text" name="lowPrice" id="lowPrice" value="" size="3"/>~&nbsp;
+                    <input type="text" name="highPrice" id="highPrice" value="" size="3"/>
                 </td>
-            </c:forEach>
-        </tr>
-        <tr>
-            <td>日租金</td>
-            <td colspan="2" align="center"><input type="text" name="lowPrice" id="lowPrice" value="" size="3"/>~&nbsp;<input type="text" name="highPrice" id="highPrice" value="" size="3"/></td>
-        </tr>
-    </table>
+                <td colspan="3" align="center">
+                    <input type="submit" name="submitSearch" id="submitSearch" value="选车">
+                </td>
+            </tr>
+        </table>
+    </form>
     <table class="table table-striped" border="0">
         <c:forEach items="${page.list}" var="car" varStatus="i">
             <tr>
-                <%--<td width="100px">--%>
-                    <%--<img src="${pageContext.request.contextPath }/static/img/${car.carPicture}"/>--%>
-                <%--</td>--%>
-                <td>
+                <td width="40%">
+                    <img src="${pageContext.request.contextPath}/images/${car.img}" width="100px"/>
+                </td>
+                <td width="20%">
                         ${car.carbrand}
                     <br />
                     <br />
-                        ${car.carmodel}/${car.cardisplacement}
+                        ${car.carmodel}/${car.cardisplacement}/
                                 <c:if test="${car.ismanual == 1}">
                                     ${"手动挡"}
                                 </c:if>
-                                <c:if test="${car.ismanual == 1}">
+                                <c:if test="${car.ismanual == 0}">
                                     ${"自动挡"}
                                 </c:if>
-                            <br /><br />乘坐${car.maxmum}人</td>
-                <td><br />${car.originalprice * car.discount / 10}/日均<br /><br />原价：${car.originalprice}</td>
-                <td align="center" valign="center"><br /><br />
+                    <br />
+                    <br />
+                            乘坐${car.maxmum}人
+                </td>
+                <td width="20%">
+                    <br />
+                        ${car.originalprice * car.discount / 10}/日均
+                    <br />
+                    <br />
+                    原价：${car.originalprice}
+                </td>
+                <td align="center" valign="center" width="20%"><br /><br />
                     <form action="${pageContext.request.contextPath}/cars/carByCarID?carID=${car.carid}&userName=${userName}" method="post">
                         <input type="submit" value="租车">
                     </form></td>
@@ -68,7 +89,6 @@
             当前${page.pageNum}页,总${page.pages}页,总共多少条${page.total}记录
         </div>
         <div class="col-md-6">
-            <input type="hidden" id="carBrand" name="carBrand" value="">
             <nav aria-label="Page navigation">
                 <ul class="pagination">
                     <li><a href="${pageContext.request.contextPath }/cars/carsWithoutHire?pn=1">首页</a></li>

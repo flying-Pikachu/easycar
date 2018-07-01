@@ -97,4 +97,6 @@ public interface CarMapper {
     List<String> selectCarsBrands();
 
     List<Car> selectCarsWithoutHireByCarBrand(@Param("carBrand") String carBrand);
+
+    List<Car> selectCarsWithoutHireByBrandAndPrice(String carBrand, double lowPrice, double highPrice);
 }
