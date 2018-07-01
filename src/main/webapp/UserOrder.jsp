@@ -16,7 +16,16 @@
 	<div class="modify-cars">
 		<div class="modify-car">
 			<div class="ti">
-				<div class="ti-l">订单提交成功</div>
+				<div class="ti-l">
+					<c:if test="${order.orderstatus == 0}">
+					${"订单提交"}
+				</c:if>
+					<c:if test="${order.orderstatus == 1}">
+						${"订单取消"}
+					</c:if>
+					<c:if test="${order.orderstatus == 2}">
+						${"交易成功"}
+					</c:if></div>
 				<div class="ti-r">应付总价:${order.ordercost}</div>
 			</div>
 			<div class="ti-detail">
@@ -58,13 +67,13 @@
 									<tr>
 										<td>取车时间</td>
 										<td>
-											<input type="text" name="pickUpTime" id="pickUpTime" value="<fmt:formatDate value="${order.pickuptime}" pattern="yyyy-MM-dd" />"/>
+											<input disabled type="text" name="pickUpTime" id="pickUpTime" value="<fmt:formatDate value="${order.pickuptime}" pattern="yyyy-MM-dd" />"/>
 										</td>
 									</tr>
 									<tr>
 										<td>还车时间</td>
 										<td>
-											<input type="text" name="returnTime" id="returnTime" value="<fmt:formatDate value="${order.returntime}" pattern="yyyy-MM-dd" />"/>
+											<input disabled type="text" name="returnTime" id="returnTime" value="<fmt:formatDate value="${order.returntime}" pattern="yyyy-MM-dd" />"/>
 										</td>
 									</tr>
 								</table>
@@ -77,7 +86,7 @@
 				<table border="0">
 					<tr>
 						<td align="center">
-							<form action="" method="post" name="myformcenter">
+							<form action="${pageContext.request.contextPath}/orders/allOrdersByUserName?userName=${userName}&pn=1" method="post" name="myformcenter">
 								<input type="submit" value="订单中心" class="submit">
 							</form>
 						</td>
@@ -87,7 +96,7 @@
 							</form>
 						</td>
 						<td align="center">
-							<form action="${pageContext.request.contextPath}/orders/cancel?orderNum=${order.ordernum}" method="post" name="myformcancel">
+							<form action="${pageContext.request.contextPath}/orders/cancel?orderNum=${order.ordernum}&userName=${userName}" method="post" name="myformcancel">
 								<input type="submit" value="取消订单" class="submit"/>
 							</form>
 						</td>

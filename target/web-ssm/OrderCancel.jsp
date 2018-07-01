@@ -77,7 +77,7 @@
                 <table border="0">
                     <tr>
                         <td align="center">
-                            <form action="" method="post" name="myformcenter">
+                            <form action="${pageContext.request.contextPath}/orders/allOrdersByUserName?userName=${userName}&pn=1" method="post" name="myformcenter">
                                 <input type="submit" value="订单中心" class="submit">
                             </form>
                         </td>

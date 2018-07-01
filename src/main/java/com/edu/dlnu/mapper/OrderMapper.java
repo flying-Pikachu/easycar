@@ -97,4 +97,6 @@ public interface OrderMapper {
     Order selectByCarID(String carID);
 
     int cancelByOrderNum(String orderNum);
+
+    List<Order> selectAllOrdersByUserName(@Param("userName") String userName);
 }

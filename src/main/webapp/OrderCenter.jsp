@@ -33,18 +33,6 @@
                             <tr>
                                 <td>${orders.ordernum}</td>
                                 <td>
-                                        <%--<c:forEach items="${allCars}" varStatus="j" var="cars">--%>
-                                            <%--<c:if test="${allCars.get(orders.carid) != null}">--%>
-                                                <%--${allCars.get(orders.carid).carbrand} + "/" +--%>
-                                                <%--${allCars.get(orders.carid).carmodel} + "/";--%>
-                                                <%--<c:when test="${allCars.get(orders.carid).ismanual == 1}">--%>
-                                                    <%--${"手动挡"}--%>
-                                                <%--</c:when>--%>
-                                                <%--<c:otherwise>--%>
-                                                    <%--${"自动挡"}--%>
-                                                <%--</c:otherwise>--%>
-                                            <%--</c:if>--%>
-                                        <%--</c:forEach>--%>
                                 </td>
                                 <td>${orders.pickuptime}</td>
                                 <td>${orders.returntime}</td>

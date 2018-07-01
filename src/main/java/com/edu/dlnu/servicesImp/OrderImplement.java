@@ -3,6 +3,8 @@ package com.edu.dlnu.servicesImp;
 import com.edu.dlnu.been.Order;
 import com.edu.dlnu.mapper.OrderMapper;
 import com.edu.dlnu.services.OrderServices;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,6 +36,13 @@ public class OrderImplement implements OrderServices {
                         add(orderMapper.selectByPrimaryKey(orderNum));
                 }
             };
+    }
+
+    public PageInfo<Order> getAllOrdersByUserName(int pn, String userName) {
+        PageHelper.startPage(pn, 3);
+        List<Order> list = orderMapper.selectAllOrdersByUserName(userName);
+        PageInfo<Order> pageInfo = new PageInfo<Order>(list);
+        return pageInfo;
     }
 
     /**

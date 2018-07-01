@@ -23,14 +23,13 @@
         </div>
     </nav>
     <div id="title"><h1 align="center">Easy-Car易人租车系统</h1></div>
-    <form action="${pageContext.request.contextPath}/cars/carsWithoutHire">
+    <form action="${pageContext.request.contextPath}/cars/carsWithoutHire?pn=1">
         <table id="select" class="table table-bordered">
             <tr>
                 <td>品牌</td>
                 <c:forEach items="${carBrands}" varStatus="i" var="carB">
                     <td>
                         <input type="Radio" name="carBrand" id="${carB}"/>
-                        <input type="hidden" name="pn" id="pn" value="1">
                         <label for="${carB}">
                                 ${carB}
                         </label>

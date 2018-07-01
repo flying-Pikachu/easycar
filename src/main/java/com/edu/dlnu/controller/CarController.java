@@ -44,7 +44,7 @@ public class CarController {
      * @return java.lang.String
      */
     @RequestMapping({"carsWithoutHire", "/"})
-    public String getCarsWithoutHire(Model model, @RequestParam String carBrand, @RequestParam int pn, double lowPrice, double highPrice) {
+    public String getCarsWithoutHire(Model model, String carBrand, @RequestParam int pn, double lowPrice, double highPrice) {
         System.out.println("carBrand = " + carBrand);
         System.out.println("pn = " + pn);
         System.out.println("lowPrice = " + lowPrice);

@@ -308,4 +308,14 @@
       set orderStatus = 1
       where orderNum = #{orderNum}
   </update>
+  <select id="selectAllOrdersByUserName" resultType="com.edu.dlnu.been.Order">
+    select * from orders
+    <where>
+      <if test="userName != null">
+        <if test="userName != ''">
+          userName = #{userName}
+        </if>
+      </if>
+    </where>
+  </select>
 </mapper>

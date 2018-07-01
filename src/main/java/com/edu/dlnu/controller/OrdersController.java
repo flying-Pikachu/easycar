@@ -56,10 +56,12 @@ public class OrdersController {
         return "OrderCenter";
     }
 
-    @RequestMapping("allOrdersByUserName")
-    public String getAllOrdersByUserName(Model model, String userName) {
-
-        return "";
+    @RequestMapping({"allOrdersByUserName", "/"})
+    public String getAllOrdersByUserName(Model model, @RequestParam int pn, @RequestParam String userName) {
+        System.out.println("userName===" + userName);
+        model.addAttribute("page", orderServices.getAllOrdersByUserName(pn, userName));
+        model.addAttribute("userName", userName);
+        return "UserOrderCenter";
     }
 
     @RequestMapping({"updateGetOrder", "/"})
@@ -86,13 +88,21 @@ public class OrdersController {
     }
 
     @RequestMapping({"cancel", "/"})
-    public String orderCancel(Model model, @RequestParam String orderNum) {
+    public String orderCancel(Model model, @RequestParam String orderNum, @RequestParam String userName) {
         int isCancel = orderServices.cancel(orderNum);
         model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
         model.addAttribute("car", carServices.getCarByCarID(orderServices.getAllOrdersByOrderNum(orderNum).get(0).getCarid()));
+        model.addAttribute("userName", userName);
         return "OrderCancel";
     }
 
+    @RequestMapping({"orderByOrderNum", "/"})
+    public String getOrderByOrderNum(Model model, @RequestParam String orderNum, @RequestParam String userName) {
+        model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
+        model.addAttribute("car", carServices.getCarByCarID(orderServices.getAllOrdersByOrderNum(orderNum).get(0).getCarid()));
+        model.addAttribute("userName", userName);
+        return "UserOrder";
+    }
     /**
      * create by: xzp
      * description: 添加订单
@@ -131,9 +141,6 @@ public class OrdersController {
             model.addAttribute("isSucc", "true");
         else
             model.addAttribute("isSucc", "false");
-        model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
-        model.addAttribute("car", carServices.getCarByCarID(carID));
-        model.addAttribute("userName", userName);
-        return "UserOrder";
+        return getOrderByOrderNum(model, orderNum, userName);
     }
 }
