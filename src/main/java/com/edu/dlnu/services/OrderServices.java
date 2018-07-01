@@ -10,5 +10,7 @@ public interface OrderServices {
 
     int add(Order order);
 
+    int cancel(String orderNum);
 
+    int update(Order order);
 }

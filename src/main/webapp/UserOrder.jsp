@@ -22,7 +22,7 @@
 			<div class="ti-detail">
 				<div class="order-no">订单号: ${order.ordernum}|</div>
 				<div class="order-name">租车人:${order.username}|</div>
-				<div class="order-date">租期${order.pickuptime}~${order.returntime}</div>
+				<div class="order-date">租期<fmt:formatDate value="${order.pickuptime}" pattern="yyyy-MM-dd" />~<fmt:formatDate value="${order.returntime}" pattern="yyyy-MM-dd" /></div>
 			</div>
 			<div class="tiCar">
 				<div class="ti-l">车辆信息</div>
@@ -58,15 +58,13 @@
 									<tr>
 										<td>取车时间</td>
 										<td>
-											<%--<input type="text" name="pickUpTime" id="pickUpTime" value=""/>--%>
-											<p><fmt:formatDate value="${order.pickuptime}" pattern="yyyy-MM-dd" /></p>
+											<input type="text" name="pickUpTime" id="pickUpTime" value="<fmt:formatDate value="${order.pickuptime}" pattern="yyyy-MM-dd" />"/>
 										</td>
 									</tr>
 									<tr>
 										<td>还车时间</td>
 										<td>
-											<%--<input type="text" name="returnTime" id="returnTime" value=""/>--%>
-											<%--<fmt:formatDate value="${order.returntime}" pattern="yyyy-MM-dd HH:mm:ss" />--%>
+											<input type="text" name="returnTime" id="returnTime" value="<fmt:formatDate value="${order.returntime}" pattern="yyyy-MM-dd" />"/>
 										</td>
 									</tr>
 								</table>
@@ -84,12 +82,12 @@
 							</form>
 						</td>
 						<td align="center">
-							<form action="" method="post" name="myformmodify">
+							<form action="${pageContext.request.contextPath}/orders/updateGetOrder?orderNum=${order.ordernum}" method="post" name="myformmodify">
 								<input type="submit" value="修改订单" class="submit"/>
 							</form>
 						</td>
 						<td align="center">
-							<form action="" method="post" name="myformcancel">
+							<form action="${pageContext.request.contextPath}/orders/cancel?orderNum=${order.ordernum}" method="post" name="myformcancel">
 								<input type="submit" value="取消订单" class="submit"/>
 							</form>
 						</td>

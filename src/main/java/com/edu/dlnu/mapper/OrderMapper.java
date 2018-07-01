@@ -95,4 +95,6 @@ public interface OrderMapper {
     int updateByPrimaryKey(Order record);
 
     Order selectByCarID(String carID);
+
+    int cancelByOrderNum(String orderNum);
 }

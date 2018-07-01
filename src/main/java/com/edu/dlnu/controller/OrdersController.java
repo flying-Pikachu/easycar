@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -55,6 +56,43 @@ public class OrdersController {
         return "OrderCenter";
     }
 
+    @RequestMapping("allOrdersByUserName")
+    public String getAllOrdersByUserName(Model model, String userName) {
+
+        return "";
+    }
+
+    @RequestMapping({"updateGetOrder", "/"})
+    public String updateGetOrder(Model model, @RequestParam String orderNum) {
+        model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
+        model.addAttribute("car", carServices.getCarByCarID(orderServices.getAllOrdersByOrderNum(orderNum).get(0).getCarid()));
+        return "OrderModify";
+    }
+
+    @RequestMapping({"update", "/"})
+    public String update(Model model, String orderNum, String userName, final String pickUpTime, final String returnTime){
+        Order order = orderServices.getAllOrdersByOrderNum(orderNum).get(0);
+        System.out.println("123" + pickUpTime);
+        System.out.println("456" + returnTime);
+        String[] subPick = pickUpTime.split("-");
+        String[] retPick = returnTime.split("-");
+        order.setPickuptime(new Date(Integer.parseInt(subPick[0]) - 1900, Integer.parseInt(subPick[1]) - 1, Integer.parseInt(subPick[2])));
+        order.setReturntime(new Date(Integer.parseInt(retPick[0]) - 1900, Integer.parseInt(retPick[1]) - 1, Integer.parseInt(retPick[2])));
+        orderServices.update(order);
+        model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
+        model.addAttribute("car", carServices.getCarByCarID(order.getCarid()));
+        model.addAttribute("userName", userName);
+        return "UserOrder";
+    }
+
+    @RequestMapping({"cancel", "/"})
+    public String orderCancel(Model model, @RequestParam String orderNum) {
+        int isCancel = orderServices.cancel(orderNum);
+        model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
+        model.addAttribute("car", carServices.getCarByCarID(orderServices.getAllOrdersByOrderNum(orderNum).get(0).getCarid()));
+        return "OrderCancel";
+    }
+
     /**
      * create by: xzp
      * description: 添加订单
@@ -93,35 +131,6 @@ public class OrdersController {
             model.addAttribute("isSucc", "true");
         else
             model.addAttribute("isSucc", "false");
-//        Order order = orderServices.getAllOrdersByOrderNum(orderNum).get(0);
-//        String pickUpTimedate = order.getPickuptime().toString();
-//        String returnTimedate = order.getReturntime().toString();
-//        System.out.println(pickUpTimedate);
-//        System.out.println(returnTimedate);
-//        Date fecha = new java.util.Date(pickUpTimedate);
-//        Date fechb = new java.util.Date(returnTimedate);
-//        DateFormat formatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss Z yyyy", Locale.US);
-//        Date date;
-//        date = (Date)formatter.parse(fecha.toString());
-//
-//        Calendar cal = Calendar.getInstance();
-//        cal.setTime(date);
-//        String formatedDate = cal.get(Calendar.YEAR) + "/" +
-//                (cal.get(Calendar.MONTH) + 1) +
-//                "/" +         cal.get(Calendar.DATE);
-//        order.setPickuptime(formatedDate);
-//        System.out.println("pickup = " + order.getPickuptime());
-//
-//        date = (Date)formatter.parse(fechb.toString());
-//
-//        cal = Calendar.getInstance();
-//        cal.setTime(date);
-//        formatedDate = cal.get(Calendar.YEAR) + "/" +
-//                (cal.get(Calendar.MONTH) + 1) +
-//                "/" +         cal.get(Calendar.DATE);
-//        order.setReturntime(new Date(formatedDate));
-//        System.out.println("return = " + order.getReturntime());
-
         model.addAttribute("order", orderServices.getAllOrdersByOrderNum(orderNum).get(0));
         model.addAttribute("car", carServices.getCarByCarID(carID));
         model.addAttribute("userName", userName);

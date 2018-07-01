@@ -303,4 +303,9 @@
       orderCost = #{ordercost,jdbcType=DOUBLE}
     where orderNum = #{ordernum,jdbcType=VARCHAR}
   </update>
+  <update id="cancelByOrderNum" parameterType="java.lang.String">
+    update orders
+      set orderStatus = 1
+      where orderNum = #{orderNum}
+  </update>
 </mapper>

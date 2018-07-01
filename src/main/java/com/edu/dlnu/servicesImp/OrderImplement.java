@@ -48,5 +48,27 @@ public class OrderImplement implements OrderServices {
         return orderMapper.insert(order);
     }
 
+    /**
+     * create by: xzp
+     * description: 更新订单状态 0 订单提交 1 订单取消 2 交易完成
+     * create time: 下午12:48 2018/7/1
+     *
+     * @param orderNum
+     * @return int
+     */
+    public int cancel(String orderNum) {
+        return orderMapper.cancelByOrderNum(orderNum);
+    }
 
+    /**
+     * create by: xzp
+     * description:通过主键进行更新
+     * create time: 下午2:03 2018/7/1
+     *
+     * @param order
+     * @return int
+     */
+    public int update(Order order) {
+        return orderMapper.updateByPrimaryKey(order);
+    }
 }

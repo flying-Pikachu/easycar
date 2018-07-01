@@ -54,14 +54,6 @@ public class CarController {
         return "FrontPage";
     }
 
-//    @RequestMapping({"carsWithoutHireByBrandAndPrice", "/"})
-//    public String getCarsWithoutHireByCarBrandAndPrice(Model model,) {
-//        System.out.println("lowPrice = " + lowPrice);
-//        System.out.println("highPrice = " + highPrice);
-//        return "FromtPage";
-//    }
-
-
     /**
      * create by: xzp
      * description: 通过车辆牌子进行查询
